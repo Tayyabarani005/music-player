@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MUSIC PLAYER</title>
+</head>
+<body>
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <img src="media/circle.svg" alt="">
+                </div>
+                <div class="circle">
+                    <img src="media/bar.svg" alt="">
+                </div>
+            </nav>
+            <img src="media/468-thumbnail.png" class="song-img">
+            <h1>Despacito</h1>
+            <p>Luis Fonsi Ft. Puerto Rican</p>
+
+
+            <audio  id="song">
+                <source src="media/Khaab Akhil.mp3" type="audio/mpeg">
+            </audio>
+            <input id="progress" type="range" value="0">
+            
+            <div class="controls">
+                <div><img src="media/backward.svg" alt=""></div>
+                <div onclick="playPause()"><img src="media/play.svg" id="ctrlIcon"></div>
+                <div><img src="media/forward.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
